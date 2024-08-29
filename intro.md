@@ -49,17 +49,16 @@ namespace ejemplo
 
 ## Métodos de entrada y salida por consola
 
-| Método               | Argumentos                          | Efecto                                                       |
-|----------------------|-------------------------------------|--------------------------------------------------------------|
-| `Console.WriteLine`  | `(string value)`                    | Escribe la cadena de texto seguida de un salto de línea.      |
-|                      | `(object value)`                    | Convierte el objeto a su representación en cadena <br> y lo escribe seguido de un salto de línea. |
-|                      | `(format, args)`                    | Escribe una cadena de texto formateada <br> seguida de un salto de línea. |
-| `Console.Write`      | `(string value)`                    | Escribe la cadena de texto sin agregar un salto de línea.     |
-|                      | `(object value)`                    | Convierte el objeto a su representación en cadena <br> y lo escribe sin salto de línea. |
-|                      | `(format, args)`                    | Escribe una cadena de texto formateada <br> sin agregar un salto de línea. |
-| `Console.ReadLine`       | `()`                                | Lee el siguiente carácter de la entrada estándar <br> sin mostrarlo. Devuelve el código entero del carácter. |
+| **Método**            | **Argumentos**                      | **Efecto**                                                   | **Ejemplo**                                                  |
+|-----------------------|-------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|
+| **`Console.WriteLine`** | `string value`                      | - Escribe la cadena de texto seguida de un salto de línea.    | `Console.WriteLine("Hola Mundo");`                           |
+|                       | `object value`                      | - Convierte el objeto a su representación en cadena <br> y lo escribe seguido de un salto de línea. | `Console.WriteLine(objeto);`                                 |
+|                       | `$"string interpolation"`               | - Escribe una cadena de texto interpolada <br> seguida de un salto de línea. | `Console.WriteLine($"El valor es {valor}");`                 |
+| **`Console.Write`**    | `string value`                      | - Escribe la cadena de texto sin agregar un salto de línea.   | `Console.Write("Hola");`                                     |
+|                       | `object value`                      | - Convierte el objeto a su representación en cadena <br> y lo escribe sin salto de línea. | `Console.Write(objeto);`                                     |
+|                       | `$"string interpolation"`               | - Escribe una cadena de texto interpolada <br> sin agregar un salto de línea. | `Console.Write($"El valor es {valor}");`                     |
+| **`Console.ReadLine`** | `n/a`                               | - Lee la siguiente línea de la entrada estándar y la devuelve como una cadena de texto. | `string entrada = Console.ReadLine();`                       |
 
-- `(string value)` es una cadena de caracteres.
-- `(object value)` es cualquier tipo de dato en `C#`
-- `(format, args)` es un formato de cadena de caracteres interpolados `$"{args1}, texto {args2}"`
+
+
 
