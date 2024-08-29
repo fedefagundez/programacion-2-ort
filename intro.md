@@ -21,7 +21,7 @@ namespace ejemplo
 
 | Palabra clave | Intervalo                                                                                         | Valor por defecto |
 |---------------|---------------------------------------------------------------------------------------------------|-------------------|
-| `int`         | De $-2.147.483.648 a 2.147.483.647$                                                                  | `0`               |
+| `int`         | De $-2.147.483.648$ a $2.147.483.647$                                                                  | `0`               |
 | `float`       | De aproximadamente $±1.5 × 10^{−45}$ a $±3.4 × 10^{38}$ (con precisión de 7 dígitos significativos)        | `0.0f`            |
 | `decimal`     | De $±1.0 × 10^{−28}$ a $±7.9 × 10^{28}$ (con precisión de 28-29 dígitos significativos)                    | `0.0m`            |
 | `double`      | De aproximadamente $±5.0 × 10^{−324}$ a $±1.7 × 10^{308}$ (con precisión de 15-16 dígitos significativos)  | `0.0d`            |
@@ -53,12 +53,87 @@ namespace ejemplo
 |-----------------------|-------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|
 | **`Console.WriteLine`** | `string value`                      | - Escribe la cadena de texto seguida de un salto de línea.    | `Console.WriteLine("Hola Mundo");`                           |
 |                       | `object value`                      | - Convierte el objeto a su representación en cadena <br> y lo escribe seguido de un salto de línea. | `Console.WriteLine(objeto);`                                 |
-|                       | `$"string interpolation"`               | - Escribe una cadena de texto interpolada <br> seguida de un salto de línea. | `Console.WriteLine($"El valor es {valor}");`                 |
+|                       | `string interpolation`               | - Escribe una cadena de texto interpolada <br> seguida de un salto de línea. | `Console.WriteLine($"El valor es {valor}");`                 |
 | **`Console.Write`**    | `string value`                      | - Escribe la cadena de texto sin agregar un salto de línea.   | `Console.Write("Hola");`                                     |
 |                       | `object value`                      | - Convierte el objeto a su representación en cadena <br> y lo escribe sin salto de línea. | `Console.Write(objeto);`                                     |
-|                       | `$"string interpolation"`               | - Escribe una cadena de texto interpolada <br> sin agregar un salto de línea. | `Console.Write($"El valor es {valor}");`                     |
+|                       | `string interpolation`               | - Escribe una cadena de texto interpolada <br> sin agregar un salto de línea. | `Console.Write($"El valor es {valor}");`                     |
 | **`Console.ReadLine`** | `n/a`                               | - Lee la siguiente línea de la entrada estándar y la devuelve como una cadena de texto. | `string entrada = Console.ReadLine();`                       |
 
+## Estructuras de control
 
+### **`if`**
 
+```c#
+if (condición) 
+{
+    // código si condición es verdadera
+}
+```
 
+### **`else if`**  
+
+```c# 
+if (condición1) 
+{
+    // código si condición1 es verdadera
+} 
+else if (condición2) 
+{
+    // código si condición2 es verdadera
+}
+```
+
+### **`else`**  
+
+```c#
+if (condición1)
+{
+    // código si condición1 es verdadera
+} 
+else if (condición2) 
+{
+    // código si condición2 es verdadera
+} 
+else 
+{
+    // código si todas las condiciones anteriores son falsas
+}
+```
+
+### **`switch`**  
+
+```c# 
+switch (variable) 
+{
+    case valor1:
+        // código
+        break;
+    case valor2:
+        // código
+        break;
+    default:
+        // código
+        break;
+}
+```
+### **`try-catch`**  
+
+```c# 
+try 
+{
+    // código que puede causar una excepción
+} 
+catch (Exception ex) 
+{
+    // manejo de la excepción
+} 
+finally 
+{
+    // código que siempre se ejecuta
+}
+```
+
+- Maneja excepciones para evitar que errores detengan el programa.
+- El bloque `catch` captura y maneja los errores (excepciones).
+- Puedes usar múltiples bloques `catch` para manejar diferentes tipos de excepciones.
+- El bloque `finally` (opcional) se ejecuta siempre, haya o no excepción.
