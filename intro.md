@@ -21,10 +21,10 @@ namespace ejemplo
 
 | Palabra clave | Intervalo                                                                                         | Valor por defecto |
 |---------------|---------------------------------------------------------------------------------------------------|-------------------|
-| `int`         | De -2.147.483.648 a 2.147.483.647                                                                  | `0`               |
-| `float`       | De aproximadamente ±1.5 × 10^−45 a ±3.4 × 10^38 (con precisión de 7 dígitos significativos)        | `0.0f`            |
-| `decimal`     | De ±1.0 × 10^−28 a ±7.9 × 10^28 (con precisión de 28-29 dígitos significativos)                    | `0.0m`            |
-| `double`      | De aproximadamente ±5.0 × 10^−324 a ±1.7 × 10^308 (con precisión de 15-16 dígitos significativos)  | `0.0d`            |
+| `int`         | De $-2.147.483.648 a 2.147.483.647$                                                                  | `0`               |
+| `float`       | De aproximadamente $±1.5 × 10^{−45}$ a $±3.4 × 10^{38}$ (con precisión de 7 dígitos significativos)        | `0.0f`            |
+| `decimal`     | De $±1.0 × 10^{−28}$ a $±7.9 × 10^{28}$ (con precisión de 28-29 dígitos significativos)                    | `0.0m`            |
+| `double`      | De aproximadamente $±5.0 × 10^{−324}$ a $±1.7 × 10^{308}$ (con precisión de 15-16 dígitos significativos)  | `0.0d`            |
 | `string`      | No tiene un límite fijo, depende del entorno. Puede contener cualquier secuencia de caracteres.    | `null`            |
 | `char`        | Cualquier carácter Unicode (UTF-16)                                                                | `'\0'`            |
 | `bool`        | `true` o `false`                                                                                   | `false`           |
