@@ -11,8 +11,8 @@ Una **clase** es una plantilla por la cual instanciamos a los **objetos**.
 
 Los elementos básicos de las **clases** u **objetos** son:
 
-- Atributos -> Características
-- Métodos -> Comportamientos
+- Atributos $\rightarrow$ Características
+- Métodos $\rightarrow$ Comportamientos
 
 __Ejemplo__: Pensemos una silla
 
