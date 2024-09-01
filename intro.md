@@ -1,4 +1,4 @@
-# Introducción
+# Introducción a `C#`
 
 ## Template básico
 
@@ -137,3 +137,153 @@ finally
 - El bloque `catch` captura y maneja los errores (excepciones).
 - Puedes usar múltiples bloques `catch` para manejar diferentes tipos de excepciones.
 - El bloque `finally` (opcional) se ejecuta siempre, haya o no excepción.
+
+## Métodos de conversión 
+
+### Métodos `Parse`
+
+1. **`int.Parse(string)`**
+    - Convierte un `string` en un `int`
+    - Ejemplo: `int num = int.Parse("123")`
+
+2. **`double.Parse(string)`**
+    - Convierte un `string` en un `double`
+    - Ejemplo: `double num = double.Parse("123.45")`
+
+3. **`long.Parse(string)`**
+    - Convierte un `string` en un `long`
+    - Ejemplo: `long num = long.Parse("12345678")`
+
+4. **`decimal.Parse(string)`**
+    - Convierte un `string` en un `decimal`
+    - Ejemplo: `decimal num = decimal.Parse("123.45")`
+
+### Métodos `TryParse`
+ 
+1. **`int.TryParse(string, out int result)`**
+   - Intenta convertir un `string` en un `int`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - Ejemplo:
+     ```csharp
+     if (int.TryParse("123", out int num)) {
+         // Conversion exitosa, usar num
+     } else {
+         // Manejar el error de conversión
+     }
+     ```
+ 
+2. **`double.TryParse(string, out double result)`**
+   - Intenta convertir un `string` en un `double`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - Ejemplo:
+     ```csharp
+     if (double.TryParse("123.45", out double num)) {
+         // Conversion exitosa, usar num
+     } else {
+         // Manejar el error de conversión
+     }
+     ```
+ 
+3. **`long.TryParse(string, out long result)`**
+   - Intenta convertir un `string` en un `long`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - Ejemplo:
+     ```csharp
+     if (long.TryParse("12345678", out long num)) {
+         // Conversion exitosa, usar num
+     } else {
+         // Manejar el error de conversión
+     }
+     ```
+ 
+4. **`decimal.TryParse(string, out decimal result)`**
+   - Intenta convertir un `string` en un `decimal`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - Ejemplo:
+     ```csharp
+     if (decimal.TryParse("123.45", out decimal num)) {
+         // Conversion exitosa, usar num
+     } else {
+         // Manejar el error de conversión
+     }
+     ```
+
+### Convertir a otros tipos numéricos
+ 
+1. **`float.TryParse(string, out float result)`**
+   - Intenta convertir un `string` en un `float`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - Ejemplo:
+     ```csharp
+     if (float.TryParse("123.45", out float num)) {
+         // Conversion exitosa, usar num
+     } else {
+         // Manejar el error de conversión
+     }
+     ```
+ 
+2. **`byte.TryParse(string, out byte result)`**
+   - Intenta convertir un `string` en un `byte`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - Ejemplo:
+     ```csharp
+     if (byte.TryParse("255", out byte num)) {
+         // Conversion exitosa, usar num
+     } else {
+         // Manejar el error de conversión
+     }
+     ```
+ 
+3. **`sbyte.TryParse(string, out sbyte result)`**
+   - Intenta convertir un `string` en un `sbyte`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - Ejemplo:
+     ```csharp
+     if (sbyte.TryParse("127", out sbyte num)) {
+         // Conversion exitosa, usar num
+     } else {
+         // Manejar el error de conversión
+     }
+     ```
+ 
+4. **`short.TryParse(string, out short result)`**
+   - Intenta convertir un `string` en un `short`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - Ejemplo:
+     ```csharp
+     if (short.TryParse("12345", out short num)) {
+         // Conversion exitosa, usar num
+     } else {
+         // Manejar el error de conversión
+     }
+     ```
+ 
+5. **`ushort.TryParse(string, out ushort result)`**
+   - Intenta convertir un `string` en un `ushort`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - Ejemplo:
+     ```csharp
+     if (ushort.TryParse("12345", out ushort num)) {
+         // Conversion exitosa, usar num
+     } else {
+         // Manejar el error de conversión
+     }
+     ```
+ 
+6. **`uint.TryParse(string, out uint result)`**
+   - Intenta convertir un `string` en un `uint`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - Ejemplo:
+     ```csharp
+     if (uint.TryParse("12345", out uint num)) {
+         // Conversion exitosa, usar num
+     } else {
+         // Manejar el error de conversión
+     }
+     ```
+ 
+7. **`ulong.TryParse(string, out ulong result)`**
+   - Intenta convertir un `string` en un `ulong`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - Ejemplo:
+     ```csharp
+     if (ulong.TryParse("123456789", out ulong num)) {
+         // Conversion exitosa, usar num
+     } else {
+         // Manejar el error de conversión
+     }
+     ```
+
+
+
+ 
+
