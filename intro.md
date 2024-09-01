@@ -162,6 +162,7 @@ finally
  
 1. **`int.TryParse(string, out int result)`**
    - Intenta convertir un `string` en un `int`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - En caso de éxito, guarda el valor convertido en `result`.
    - Ejemplo:
      ```csharp
      if (int.TryParse("123", out int num)) {
@@ -173,6 +174,7 @@ finally
  
 2. **`double.TryParse(string, out double result)`**
    - Intenta convertir un `string` en un `double`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   -  En caso de éxito, guarda el valor convertido en `result`.
    - Ejemplo:
      ```csharp
      if (double.TryParse("123.45", out double num)) {
@@ -184,6 +186,7 @@ finally
  
 3. **`long.TryParse(string, out long result)`**
    - Intenta convertir un `string` en un `long`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   -  En caso de éxito, guarda el valor convertido en `result`.
    - Ejemplo:
      ```csharp
      if (long.TryParse("12345678", out long num)) {
@@ -195,6 +198,7 @@ finally
  
 4. **`decimal.TryParse(string, out decimal result)`**
    - Intenta convertir un `string` en un `decimal`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - En caso de éxito, guarda el valor convertido en `result`.
    - Ejemplo:
      ```csharp
      if (decimal.TryParse("123.45", out decimal num)) {
@@ -208,6 +212,7 @@ finally
  
 1. **`float.TryParse(string, out float result)`**
    - Intenta convertir un `string` en un `float`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - En caso de éxito, guarda el valor convertido en `result`.
    - Ejemplo:
      ```csharp
      if (float.TryParse("123.45", out float num)) {
@@ -219,6 +224,7 @@ finally
  
 2. **`byte.TryParse(string, out byte result)`**
    - Intenta convertir un `string` en un `byte`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - En caso de éxito, guarda el valor convertido en `result`.
    - Ejemplo:
      ```csharp
      if (byte.TryParse("255", out byte num)) {
@@ -230,6 +236,7 @@ finally
  
 3. **`sbyte.TryParse(string, out sbyte result)`**
    - Intenta convertir un `string` en un `sbyte`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - En caso de éxito, guarda el valor convertido en `result`.
    - Ejemplo:
      ```csharp
      if (sbyte.TryParse("127", out sbyte num)) {
@@ -241,6 +248,7 @@ finally
  
 4. **`short.TryParse(string, out short result)`**
    - Intenta convertir un `string` en un `short`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - En caso de éxito, guarda el valor convertido en `result`.
    - Ejemplo:
      ```csharp
      if (short.TryParse("12345", out short num)) {
@@ -252,6 +260,7 @@ finally
  
 5. **`ushort.TryParse(string, out ushort result)`**
    - Intenta convertir un `string` en un `ushort`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - En caso de éxito, guarda el valor convertido en `result`.
    - Ejemplo:
      ```csharp
      if (ushort.TryParse("12345", out ushort num)) {
@@ -263,6 +272,7 @@ finally
  
 6. **`uint.TryParse(string, out uint result)`**
    - Intenta convertir un `string` en un `uint`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - En caso de éxito, guarda el valor convertido en `result`.
    - Ejemplo:
      ```csharp
      if (uint.TryParse("12345", out uint num)) {
@@ -274,6 +284,7 @@ finally
  
 7. **`ulong.TryParse(string, out ulong result)`**
    - Intenta convertir un `string` en un `ulong`. Devuelve `true` si la conversión es exitosa; de lo contrario, devuelve `false`.
+   - En caso de éxito, guarda el valor convertido en `result`.
    - Ejemplo:
      ```csharp
      if (ulong.TryParse("123456789", out ulong num)) {
@@ -283,7 +294,39 @@ finally
      }
      ```
 
+## Información adicional
 
+En C#, la organización de código en **soluciones** y **proyectos** es un aspecto fundamental del desarrollo, especialmente cuando se trabaja en aplicaciones complejas. Este concepto en programación se denomina **estructura de soluciones y proyectos**, y está estrechamente relacionado con el concepto de **arquitectura de software**.
 
- 
+### Estructura de Soluciones y Proyectos en C#
+
+#### 1. **Solución (Solution)**
+   - **Definición:** Una **solución** es un contenedor lógico que puede agrupar múltiples proyectos relacionados. La solución actúa como un marco organizativo que permite gestionar el conjunto de proyectos que componen una aplicación o un conjunto de aplicaciones.
+   - **Archivo de solución:** Las soluciones se representan mediante un archivo con extensión `.sln` (por ejemplo, `MySolution.sln`), que almacena la información sobre los proyectos que forman parte de la solución y cómo están relacionados entre sí.
+   - **Propósito:** Una solución permite organizar diferentes proyectos que pueden estar relacionados entre sí, por ejemplo, una aplicación principal, bibliotecas de clases, pruebas unitarias, etc.
+
+   **Ejemplo:**
+   - **MySolution.sln**
+     - ProyectoA (Aplicación Console)
+     - ProyectoB (Biblioteca de Clases)
+     - ProyectoC (Pruebas Unitarias)
+
+#### 2. **Proyecto (Project)**
+   - **Definición:** Un **proyecto** es una unidad lógica dentro de una solución que compila a un ensamblado (assembly), como una biblioteca de clases (DLL) o una aplicación ejecutable (EXE). Cada proyecto se gestiona independientemente y tiene su propio archivo de configuración.
+   - **Archivo de proyecto:** Cada proyecto en C# se define mediante un archivo con extensión `.csproj` (por ejemplo, `MyProject.csproj`). Este archivo contiene configuraciones sobre el proyecto, como las referencias a otros ensamblados, dependencias, opciones de compilación, etc.
+   - **Propósito:** Los proyectos dividen el código en componentes manejables y reutilizables. Por ejemplo, puedes tener un proyecto para la interfaz de usuario, otro para la lógica de negocios, y otro para la base de datos.
+
+   **Tipos Comunes de Proyectos:**
+   - **Aplicación Console:** Genera un archivo `.exe`.
+   - **Biblioteca de Clases:** Genera un archivo `.dll`.
+   - **Aplicación Web (ASP.NET):** Para aplicaciones web.
+   - **Proyecto de Pruebas Unitarias:** Contiene pruebas automatizadas.
+
+### Conceptos en Programación
+
+El concepto de solución y proyectos se refiere a la organización modular del código en programación. En términos más generales, esto cae bajo el principio de modularidad en la arquitectura de software, que se refiere a la división de una aplicación en módulos o componentes separados, pero relacionados, que pueden ser desarrollados, probados y mantenidos de forma independiente.
+
+- **Modularidad**: Permite que diferentes equipos trabajen en diferentes partes de la aplicación de manera simultánea.
+- **Reutilización de Código**: Los proyectos pueden ser reutilizados en diferentes soluciones, lo que reduce la duplicación de código.
+- **Mantenimiento**: Facilita la actualización y el mantenimiento del software, ya que los cambios en un proyecto (por ejemplo, una biblioteca de clases) se reflejan en todas las aplicaciones que lo utilizan.
 
