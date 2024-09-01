@@ -4,9 +4,10 @@
 - Es una manera de construir software
 - Podemos modelar entidades tangibles o intangibles
 - Podemos compartir responsabilidades
+- Facilita la encapsulación y la protección de datos
 
 ## Elementos
-
+ 
 Una **clase** es una plantilla por la cual instanciamos a los **objetos**.
 
 Los elementos básicos de las **clases** u **objetos** son:
@@ -16,18 +17,15 @@ Los elementos básicos de las **clases** u **objetos** son:
 
 __Ejemplo__: Pensemos una silla
 
-Atributos: modelo, color, material, garantía, código, precio
-
+Atributos: modelo:`string`, color: `string`, material: `string`, garantía: `bool`, código: `int`, precio: `double`
 
 ## Ejemplo en `C#`
 
 ### Modificadores de acceso
 
-ver:
-
-- private
-- internal
-- public
+- **`private`** : solo se puede acceder desde la misma clase
+- **`internal`** : se puede acceder desde el mismo proyecto
+- **`public`** : es accesible desde otros proyectos de la misma solución
 
 TODAS LAS CLASES SON HIJAS DE UNA CLASE `Object`
 
@@ -103,7 +101,7 @@ namespace Consola
                 return precioFinal;
             }
 
-            // Sobreescribir el método ToString
+            // override sobrescribe métodos preexistentes, en este caso el método ToString
             public override string ToString()
             {
                 return $"Id: {_codigo} - Modelo: {_modelo} - Precio base: ${_precio} - Precio final: ${CalcularPrecioFinal()} - Garantia: {_tieneGarantia}"
@@ -112,7 +110,7 @@ namespace Consola
             // VALIDAR OBJETOS
             public bool Validar()
             {
-                return !string.IsNullOrEmpty(_modelo) && !string_isNullOrEmpty(_color)...;
+                return !string.IsNullOrEmpty(_modelo) && !string.isNullOrEmpty(_color) && !string.isNullOrEmpty(_material) && _precio > 0 && _codigo >= 0;
             }
         }
 
@@ -120,7 +118,7 @@ namespace Consola
 }
 ```
 
-Invocar el objeto silla
+Trabajar con la clase Silla
 
 ```c#
 namespace Consola
@@ -137,13 +135,17 @@ namespace Consola
 
             // Obtener atributo
             string modeloDeSilla1 = miSilla1.Modelo;
-            Console.ReadLine(modeloDeSilla1);
+            Console.WriteLine(modeloDeSilla1);
             // Modificar atributo
             miSilla1.Modelo = "Sillón de living";
 
             Console.WriteLine(miSilla1.AlgunosDatos());
+            Console.WriteLine(miSilla1.CalcularPrecioFinal());
 
-            Console.WriteLine(miSilla1): // Muestra la ruta de la clase 
+            Console.WriteLine(miSilla2.AlgunosDatos());
+            Console.WriteLine(miSilla2.CalcularPrecioFinal());
+            
+            Console.WriteLine(miSilla1.modelo);// Muestra la ruta de la clase 
         }
     }
 }
@@ -159,3 +161,28 @@ namespace Consola
 Cuando tengo más de una versión de un método, donde cambian los parámetros.
 Por ejemplo en la sobrecarga del método constructor.
 
+```mermaid
+classDiagram
+    note "From Duck till Zebra"
+    Animal <|-- Duck
+    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
+```
