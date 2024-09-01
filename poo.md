@@ -152,37 +152,44 @@ namespace Consola
 
 ```
 
-**Firma de un objeto**:
-- Tipo de dato de retorno
-- Tipo de datos 
-- Nombre de la objeto
+**Firma de un método**:
+La firma de un método está determinada
 
 **Sobre carga**
-Cuando tengo más de una versión de un método, donde cambian los parámetros.
-Por ejemplo en la sobrecarga del método constructor.
+
+La sobrecarga en programación se refiere a la capacidad de definir múltiples métodos o funciones con el mismo nombre, pero con diferentes **firmas** (es decir, diferentes tipos o números de parámetros). En `C#`, por ejemplo, puedes tener varios métodos llamados Sumar, donde uno acepta dos enteros, otro acepta dos decimales, y otro acepta tres enteros. El compilador selecciona el método adecuado según los argumentos que se pasen, lo que permite un código más flexible y fácil de leer.
+
+## Diagrama UML
+
+Los diagramas UML (Unified Modeling Language) en Programación Orientada a Objetos (POO) se utilizan para visualizar, especificar, construir y documentar los elementos de un sistema. Ayudan a representar la estructura y el comportamiento de un sistema de software, facilitando la comunicación entre los miembros del equipo y proporcionando una guía clara para el desarrollo. UML incluye varios tipos de diagramas, como de clases, secuencia y casos de uso, que permiten modelar diferentes aspectos del sistema de manera visual y organizada.
+
+### Diagrama del ejemplo
+
+La siguiente es una representación de una clase en UML
+
+- La sección superior especifica el nombre de la clase
+- La sección enumero los atributos.
+- La ultima sección detalla los métodos.
+- `-` y `+` indican los **modificadores de acceso**, público y privado respectivamente.
+
 
 ```mermaid
+---
+title: Clase Silla
+---
 classDiagram
-    note "From Duck till Zebra"
-    Animal <|-- Duck
-    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
-    }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
-    }
-    class Zebra{
-        +bool is_wild
-        +run()
+    class Silla{
+        -_modelo : string
+        -_color : string
+        -_material : string
+        -_codigo : int
+        -_tieneGarantia : bool
+        -_precio : double
+        +Silla(modelo : string, color : string, material : string, codigo : int, precio : double, tieneGarantia : bool)
+        +AlgunosDatos() string
+        +CalcularPrecioFinal() double
+        +Validar() bool
+        +ToString() string
     }
 ```
+
