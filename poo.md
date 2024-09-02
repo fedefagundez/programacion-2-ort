@@ -180,7 +180,11 @@ public Silla()
 ```
 
 **Firma de un método**:
-La firma de un método está determinada
+
+La firma de un método está determinada por:
+- El nombre del método
+- El tipo de retorno
+- El tipo de parámetros
 
 **Sobre carga**
 
