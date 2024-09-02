@@ -79,13 +79,30 @@ namespace Consola
             }
 
             // Constructor con un valor por defecto de tieneGarantia
-            public Silla(string modelo, string color, string material, int codigo, double, precio){
+            public Silla(string modelo, string color, string material, int codigo, double precio, ){
                 _modelo = modelo;
                 _color = color;
                 _material = material;
                 _codigo = codigo;
                 _precio = precio;
                 _tienePrecio = false;
+            }
+
+            // Sobrecarga de método constructor
+            public Silla(string modelo, string color, string material, int codigo, double precio)
+            {
+                _modelo = modelo;
+                _color = color;
+                _material = material;
+                _precio = precio;
+                _codigo = codigo;
+                _tieneGarantia = false;
+            }
+
+            // Encaso de crear el constructor debemos crear el siguiente método para tenerlo disponible
+            public Silla()
+            {
+
             }
 
             // Métodos que determinan el comportamiento de mis objetos
@@ -150,6 +167,16 @@ namespace Consola
     }
 }
 
+```
+
+**Nota:**
+El siguiente método se encuentra disponible por defecto en `C#`, en caso de crear un método constructor debemos escribir la sobrecarga sin parámetros, si queremos tenerla disponible.
+
+```c#
+public Silla()
+    {
+
+    }
 ```
 
 **Firma de un método**:
