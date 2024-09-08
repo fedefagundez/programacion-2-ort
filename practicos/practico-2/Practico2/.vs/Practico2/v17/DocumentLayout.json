@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin.DESKTOP-0Q23CA9\\Documents\\ORT\\programacion-2-ort\\practicos\\practico-2\\Practico2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80345792-78E0-4936-931F-0BF7CB674B4C}|Practico2\\Practico2.csproj|c:\\users\\admin.desktop-0q23ca9\\documents\\ort\\programacion-2-ort\\practicos\\practico-2\\practico2\\practico2\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80345792-78E0-4936-931F-0BF7CB674B4C}|Practico2\\Practico2.csproj|solutionrelative:practico2\\cuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80345792-78E0-4936-931F-0BF7CB674B4C}|Practico2\\Practico2.csproj|c:\\users\\admin.desktop-0q23ca9\\documents\\ort\\programacion-2-ort\\practicos\\practico-2\\practico2\\practico2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80345792-78E0-4936-931F-0BF7CB674B4C}|Practico2\\Practico2.csproj|solutionrelative:practico2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cuenta.cs",
+              "DocumentMoniker": "C:\\Users\\Admin.DESKTOP-0Q23CA9\\Documents\\ORT\\programacion-2-ort\\practicos\\practico-2\\Practico2\\Practico2\\Cuenta.cs",
+              "RelativeDocumentMoniker": "Practico2\\Cuenta.cs",
+              "ToolTip": "C:\\Users\\Admin.DESKTOP-0Q23CA9\\Documents\\ORT\\programacion-2-ort\\practicos\\practico-2\\Practico2\\Practico2\\Cuenta.cs",
+              "RelativeToolTip": "Practico2\\Cuenta.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAqwD4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T01:06:36.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin.DESKTOP-0Q23CA9\\Documents\\ORT\\programacion-2-ort\\practicos\\practico-2\\Practico2\\Practico2\\Program.cs",
+              "RelativeDocumentMoniker": "Practico2\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin.DESKTOP-0Q23CA9\\Documents\\ORT\\programacion-2-ort\\practicos\\practico-2\\Practico2\\Practico2\\Program.cs",
+              "RelativeToolTip": "Practico2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T22:44:14.792Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\bin\Debug\net8.0\Practico2.exe
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\bin\Debug\net8.0\Practico2.deps.json
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\bin\Debug\net8.0\Practico2.runtimeconfig.json
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\bin\Debug\net8.0\Practico2.dll
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\bin\Debug\net8.0\Practico2.pdb
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\obj\Debug\net8.0\Practico2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\obj\Debug\net8.0\Practico2.AssemblyInfoInputs.cache
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\obj\Debug\net8.0\Practico2.AssemblyInfo.cs
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\obj\Debug\net8.0\Practico2.csproj.CoreCompileInputs.cache
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\obj\Debug\net8.0\Practico2.sourcelink.json
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\obj\Debug\net8.0\Practico2.dll
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\obj\Debug\net8.0\refint\Practico2.dll
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\obj\Debug\net8.0\Practico2.pdb
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\obj\Debug\net8.0\Practico2.genruntimeconfig.cache
+C:\Users\Admin.DESKTOP-0Q23CA9\Documents\ORT\programacion-2-ort\practicos\practico-2\Practico2\Practico2\obj\Debug\net8.0\ref\Practico2.dll
