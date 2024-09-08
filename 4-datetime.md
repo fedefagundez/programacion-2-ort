@@ -24,10 +24,43 @@
 
 ## **Métodos**
 
-- `AddDays(double value)`: Devuelve una nueva instancia de `DateTime` que representa la fecha y hora resultantes de sumar el número especificado de días.
-- `AddMonths(int months)`: Devuelve una nueva instancia de `DateTime` que representa la fecha y hora resultantes de sumar el número especificado de meses.
+- **`AddDays(double value)`**: Devuelve una nueva instancia de `DateTime` que representa la fecha y hora resultantes de sumar el número especificado de días. Podemos sumar fracciones de día.
+
+    **Ejemplo**:  
+  ```c#
+  DateTime hoy = DateTime.Now;
+  DateTime futuro = hoy.AddDays(5);
+  Console.WriteLine(futuro);  // Muestra la fecha y hora 5 días después de la actual.
+  ```
+
+- `AddMonths(int months)`: Devuelve una nueva instancia de `DateTime` que representa la fecha y hora resultantes de sumar el número especificado de meses. 
+
+    **Ejemplo**
+    ```c#
+    DateTime hoy = DateTime.Now;
+    DateTime futuro = hoy.AddMonths(2);
+    Console.WriteLine(futuro);  // Muestra la fecha y hora 2 meses después de la actual.
+    ```
+
 - `ToString(string format)`: Devuelve una representación de cadena de la fecha y hora actual, usando el formato especificado.
+
+    **Ejemplo**
+    ```c#
+    DateTime hoy = DateTime.Now;
+    string formatoPersonalizado = hoy.ToString("yyyy-MM-dd");
+    Console.WriteLine(formatoPersonalizado);  // Muestra la fecha en el formato 'año-mes-día'.
+
+    ```
+
 - `Subtract(DateTime value)`: Calcula la diferencia entre dos instancias de `DateTime` y devuelve un objeto TimeSpan.
+
+    **Ejemplo**
+    ```c#
+    DateTime fecha1 = new DateTime(2024, 9, 8);
+    DateTime fecha2 = new DateTime(2024, 9, 1);
+    TimeSpan diferencia = fecha1.Subtract(fecha2);
+    Console.WriteLine(diferencia.Days);  // Muestra la diferencia de 7 días.
+    ```
 
 ## **Formatos de fecha y hora**
 
