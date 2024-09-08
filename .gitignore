@@ -1,0 +1,16 @@
+# Ignorar binarios y carpetas de compilación
+bin/ 
+obj/
+
+# Ignorar paquetes NuGet descargados
+*.nupkg
+*.snupkg
+packages/
+
+# Ignorar configuraciones de usuario y del IDE
+*.user
+*.suo
+*.csproj
+.user 
+.vscode/ 
+*.vs/
